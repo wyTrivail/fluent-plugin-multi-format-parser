@@ -28,7 +28,7 @@ module Fluent
         @parsers.each { |parser|
           begin
             parser.parse(text) { |time, record|
-              if time && record
+              if time || record
                 yield time, record
                 return
               end
