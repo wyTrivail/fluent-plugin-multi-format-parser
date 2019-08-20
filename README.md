@@ -1,6 +1,7 @@
 # Multi format parser plugin for Fluentd
 
-Parse format mixed logs.
+Parse format mixed logs. This is a forked version in order to make compatible
+with the parsers who don't handle time. For instance: https://github.com/nom3ad/fluent-plugin-keyvalue-parser
 
 ## Requirements
 
